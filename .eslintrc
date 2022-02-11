@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "vue/setup-compiler-macros": true
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "vue",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "vue/component-tags-order": ["error", {
+      "order": ["template", "script", "style"]
+    }],
+    "vue/first-attribute-linebreak": ["error", {
+      "singleline": "below",
+      "multiline": "below"
+    }],
+    "vue/singleline-html-element-content-newline": ["error", {
+      "ignoreWhenNoAttributes": false
+    }]
+  }
+}
