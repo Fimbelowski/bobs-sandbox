@@ -18,6 +18,7 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "no-shadow": "off",
     "vue/component-tags-order": ["error", {
       "order": ["template", "script", "style"]
     }],
@@ -27,6 +28,7 @@
     }],
     "vue/singleline-html-element-content-newline": ["error", {
       "ignoreWhenNoAttributes": false
-    }]
+    }],
+    "@typescript-eslint/no-shadow": ["error"]
   }
 }
