@@ -7,7 +7,7 @@ describe('CardDrawer', () => {
   it('is closed by default', () => {
     const wrapper = mount(CardDrawer);
 
-    const toggleButton = wrapper.find('button');
+    const toggleButton = wrapper.find('[data-testid="toggle-button"]');
     expect(toggleButton.text()).toBe('Open');
 
     const cardContainer = wrapper.find('[data-testid="card-container"]');
@@ -17,7 +17,7 @@ describe('CardDrawer', () => {
   it('should open when the toggle is clicked', async () => {
     const wrapper = mount(CardDrawer);
 
-    const toggleButton = wrapper.find('button');
+    const toggleButton = wrapper.find('[data-testid="toggle-button"]');
     await toggleButton.trigger('click');
 
     expect(toggleButton.text()).toBe('Close');

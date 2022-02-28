@@ -4,6 +4,7 @@
   >
     <button
       class="bg-neutral-700 flex hover:bg-neutral-600 justify-center p-3 text-white w-full"
+      data-testid="toggle-button"
       type="button"
       @click="toggleDrawerOpen"
     >
