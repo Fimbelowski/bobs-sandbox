@@ -14,12 +14,16 @@
       class="bg-neutral-800 transition-all"
       data-testid="card-container"
       :class="isOpen ? 'h-[700px]' : 'h-0'"
-    />
+    >
+      <CardFilters />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+
+import CardFilters from './CardFilters.vue';
 
 const isOpen = ref(false);
 
